@@ -1,0 +1,67 @@
+.container {
+    text-align: center;
+}
+.newTaskSection {
+    text-align: center;
+    padding-top: 12vh;
+    margin-bottom: 2rem;
+}
+.newTaskInput input {
+    font-size: 1rem;
+    width: 33vw;
+    min-width: 300px;
+}
+
+.tasksSection {
+    text-align: center;
+}
+
+.taskCard {
+    margin: auto;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    border: var(--border-primary);
+    font-size: 1rem;
+    width: 33vw;
+    padding: 0.25em 1em;
+    cursor: pointer;
+    transition: 0.3s;
+    min-width: 300px;
+    animation: newTask 1s forwards;
+    text-align: left;
+}
+.taskCard:hover {
+    background-color: var(--font-color-active);
+    color: var(--bg-color-secondary);
+}
+
+.taskCard strong {
+    width: 100%;
+    display: block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-align: left;
+}
+
+.taskCard span {
+    width: 100%;
+    display: block;
+    color: var(--font-color-secondary);
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+@keyframes newTask {
+    from {
+        pointer-events: none;
+        opacity: 0;
+        transform: translate(0, -100px);
+    }
+    to {
+        pointer-events: all;
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}

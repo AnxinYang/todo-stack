@@ -1,0 +1,22 @@
+:root {
+    --font-size-global: 14px;
+    --font-size-title: 3rem;
+    --font-size-normal: 1rem;
+    --font-size-small: 0.8rem;
+
+    --font-color-primary: #222;
+    --font-color-secondary: #666;
+    --font-color-error: red;
+    --font-color-active: #00a1d6;
+    --font-color-disabled: #777;
+
+    --bg-color-main: #aaa;
+    --bg-color-secondary: #eee;
+    --bg-color-disabled: #ddd;
+
+    --border-primary: 1px solid lightgray;
+    --border-active: 1px solid var(--font-color-active);
+
+    --box-shadow-primary: 0px 0px 8px 0px #aaa;
+    --box-shadow-high: 0px 0px 16px 0px #aaa;
+}

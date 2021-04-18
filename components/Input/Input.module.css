@@ -1,0 +1,21 @@
+.container {
+    position: relative;
+}
+
+.container input {
+    padding: 0.25em 1em;
+    border-radius: 4px;
+    border: var(--border-primary);
+    transition: 0.3s;
+}
+
+.container input:focus {
+    border: var(--border-active);
+    transform: scale(1.05);
+    box-shadow: var(--box-shadow-primary);
+}
+
+.container input:disabled {
+    color: var(--font-color-disabled);
+    background-color: var(--bg-color-disabled);
+}
